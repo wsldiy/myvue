@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="app">
+    <span v-bind:title="message">
+        Hover your mouse over me for a few seconds to see dynamically bound title!
+    </span>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            message:'your load this page on' +new Date()
+        }
+    });
+</script>
+</html>
